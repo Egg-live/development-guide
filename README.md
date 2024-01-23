@@ -25,5 +25,9 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
     2. Repository sripts
     3. Code styling & format
 7. Las ceremonias
-8. El flujo de trabajo 
-9. El producto desarrollado 
+    1. Daily meet
+    2. Retrospective Meet
+    3. Architecture Meet
+    4. Refinement Meet
+9. El flujo de trabajo 
+10. El producto desarrollado 
