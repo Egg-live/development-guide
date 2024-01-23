@@ -32,4 +32,25 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
     4. Refinement Meet
 9. El flujo de trabajo
     1. Pair programming
-11. El producto desarrollado 
+11. El producto desarrollado
+
+## El desarrollador
+
+Esta sección establece los estándares y habilidades esenciales para cada miembro del equipo de desarrollo, sirviendo como referencia para resolver dudas y revisar los estándares y herramientas diseñadas para ellos.
+
+### Habilidades Requeridas
+
+La siguiente lista detalla las habilidades mínimas necesarias para garantizar la adaptación exitosa del desarrollador en cualquier equipo o proyecto actual y futuro.
+
+Estas habilidades son complementarias a los requisitos específicos de cada posición y deben ser solicitadas y validadas durante el proceso de contratación. Cada miembro del equipo de desarrollo debe poseer todas las habilidades mencionadas, con el nivel especificado a continuación:
+
+#### Habilidades Mínimas Requeridas
+
+1. **Español:** Intermedio
+2. **Inglés:** Intermedio
+3. **JavaScript, TypeScript y Python:** Intermedio
+4. **Node, React:** Intermedio
+5. **Bases de Datos:** Intermedio
+6. **Git:** Intermedio
+
+
