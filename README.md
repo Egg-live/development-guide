@@ -16,13 +16,14 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
 
 ## Índice de temas:
 1. El desarrollador
-  1. Habilidades requeridas
-  2. Crecimiento y Performance
+  - Habilidades requeridas
+  - Crecimiento y Performance
 3. El equipo de desarrollo 
 4. El stack tecnológico   
 5. Los repositorios
-  a) Modo desarrollo
-  b) NPM sripts 
+  - Modo desarrollo
+  - Repository sripts
+  - Code styling & format
 7. Las ceremonias
 8. El flujo de trabajo 
 9. El producto desarrollado 
