@@ -24,10 +24,12 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
     1. Modo desarrollo
     2. Repository sripts
     3. Code styling & format
+    4. README.md
 7. Las ceremonias
     1. Daily meet
     2. Retrospective Meet
     3. Architecture Meet
     4. Refinement Meet
-9. El flujo de trabajo 
-10. El producto desarrollado 
+9. El flujo de trabajo
+    1. Pair programming
+11. El producto desarrollado 
