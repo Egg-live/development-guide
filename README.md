@@ -16,8 +16,8 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
 
 ## Índice de temas:
 1. El desarrollador
-  a) Habilidades requeridas
-  b) Crecimiento y Performance
+  1. Habilidades requeridas
+  2. Crecimiento y Performance
 3. El equipo de desarrollo 
 4. El stack tecnológico   
 5. Los repositorios
