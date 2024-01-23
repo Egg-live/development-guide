@@ -53,4 +53,42 @@ Estas habilidades son complementarias a los requisitos específicos de cada posi
 5. **Bases de Datos:** Intermedio
 6. **Git:** Intermedio
 
+## Stack Tecnológico
 
+En esta sección, se establecen los estándares, tecnologías y herramientas que conforman nuestro Stack Tecnológico.
+
+Cada nuevo proyecto diseñado o desarrollado debe adaptarse y utilizar el Stack Tecnológico definido a continuación.
+
+En casos donde la implementación con este Stack no sea posible, los desarrolladores a cargo del proyecto deben solicitar una reunión de arquitectura ("Architecture Meet"). Durante esta reunión, expondrán los impedimentos para utilizar uno de los Stacks definidos y justificarán las herramientas y tecnologías sugeridas. Solo si la reunión de arquitectura concluye que es necesario incumplir los estándares especificados, se permitirá iniciar el desarrollo o la implementación.
+
+> La convocatoria a la "Architecture Meet" debe cumplir con las pautas establecidas en este documento.
+
+### Frontend Stack:
+- Vite
+- React
+- Gatsby
+- NextJS
+- React Router
+- TanStack Query
+- TypeScript
+- Styled Components
+
+### Backend Stack:
+- Next.js
+- Fastify
+- TypeScript
+- Python
+- Prisma
+
+### Database Stack:
+- MySQL
+- MongoDB
+- Redis
+
+### Cloud Stack:
+- AWS
+
+### DevOps Stack:
+- Grafana
+- Kubernetes
+- Docker
