@@ -1,6 +1,7 @@
 # Development guide
 
 ## Acerca de esta guía
+
 El propósito de esta guía es establecer los estándares y procesos aplicables a cada desarrollador, al equipo de desarrollo y al producto resultante de sus esfuerzos.
 
 Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo siguiente:
@@ -14,25 +15,26 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
 
 > Esta guía se encuentra en constante ampliación y evolución. Es responsabilidad de cada miembro del equipo mantenerse informado sobre los cambios y las últimas actualizaciones. Se sugiere suscribirse, leer y colaborar en su mantenimiento y mejora.
 
-## Índice de temas:
-1. El desarrollador
-    1. Habilidades requeridas
-    2. Crecimiento y Performance
-3. El equipo de desarrollo 
-4. El stack tecnológico   
-5. Los repositorios
-    1. Modo desarrollo
-    2. Repository sripts
-    3. Code styling & format
-    4. README.md
-7. Las ceremonias
-    1. Daily meet
-    2. Retrospective Meet
-    3. Architecture Meet
-    4. Refinement Meet
-9. El flujo de trabajo
-    1. Pair programming
-11. El producto desarrollado
+## Índice
+
+- [Development guide](#development-guide)
+  - [Acerca de esta guía](#acerca-de-esta-guía)
+  - [Índice](#índice)
+  - [El desarrollador](#el-desarrollador)
+    - [Habilidades Requeridas](#habilidades-requeridas)
+      - [Habilidades Mínimas Requeridas](#habilidades-mínimas-requeridas)
+  - [Stack Tecnológico](#stack-tecnológico)
+    - [Frontend Stack](#frontend-stack)
+    - [Backend Stack](#backend-stack)
+    - [Database Stack](#database-stack)
+    - [Cloud Stack](#cloud-stack)
+    - [DevOps Stack:](#devops-stack)
+  - [Repositorios](#repositorios)
+    - [README.md](#readmemd)
+    - [Modo Desarrollo](#modo-desarrollo)
+    - [Scripts del Repositorio](#scripts-del-repositorio)
+      - [Basic Scripts](#basic-scripts)
+    - [Estilo de Código y Formato](#estilo-de-código-y-formato)
 
 ## El desarrollador
 
@@ -63,7 +65,8 @@ En casos donde la implementación con este Stack no sea posible, los desarrollad
 
 > La convocatoria a la "Architecture Meet" debe cumplir con las pautas establecidas en este documento.
 
-### Frontend Stack:
+### Frontend Stack
+
 - Vite
 - React
 - Gatsby
@@ -73,26 +76,29 @@ En casos donde la implementación con este Stack no sea posible, los desarrollad
 - TypeScript
 - Styled Components
 
-### Backend Stack:
+### Backend Stack
+
 - Next.js
 - Fastify
 - TypeScript
 - Python
 - Prisma
 
-### Database Stack:
+### Database Stack
+
 - MySQL
 - MongoDB
 - Redis
 
-### Cloud Stack:
+### Cloud Stack
+
 - AWS
 
 ### DevOps Stack:
+
 - Grafana
 - Kubernetes
 - Docker
-
 
 ## Repositorios
 
@@ -102,21 +108,30 @@ Para repositorios existentes, se debe estimar el esfuerzo necesario para adaptar
 
 ### README.md
 
-En esta sección se definen la anatomía básica del archivo README de cada repositorio con el objetivo de facilitar su uso.
-
-Todas las secciones descritas a continuación deben estar presentes en el archivo README.md, salvo que no sea necesario o aplique.
+Todas las secciones descritas a continuación deben estar presentes en el archivo README.md, salvo que **no** sea necesario o **no** aplique.
 
 ```md
 # Description:
-Breve descripción de la aplicación y su funcionalidad principal.
+
+Breve descripción de la aplicación, su funcionalidad principal y a quien va dirigida.
 
 # Owner
-Nombre de la persona responsable del repositorio y su correo electrónico.
+
+Nombre de la persona responsable del repositorio y enlace a su correo electrónico.
+
+# Main Branches
+
+- **development**: A development branch
+- **staging**: A quality assurance test branch
+- **demo**: A pre production branch
+- **main**: A production released branch
 
 # Development mode:
+
 Instrucciones para clonar y lanzar el modo desarrollo del repositorio.
 
 # Basic Scripts:
+
 - **npm dev**: Iniciar modo de desarrollo
 - **npm start**: Iniciar aplicación
 - **npm build**: Construir aplicación
@@ -124,7 +139,12 @@ Instrucciones para clonar y lanzar el modo desarrollo del repositorio.
 - **npm test:ci**: Ejecutar todas las pruebas en modo CI
 
 # Other Scripts
+
 Lista y breve descripción de los demás scripts disponibles en el repositorio.
+
+# Adicional Information
+
+Información adicional que no aplique en las secciones anteriores.
 ```
 
 ### Modo Desarrollo
@@ -147,9 +167,10 @@ Todos los repositorios de software deben contar con los scripts detallados a con
 El resto de los scripts específicos de cada repositorio y una breve explicación de su funcionalidad deben documentarse en la sección "Other Scripts" del `README.md` del mismo.
 
 #### Basic Scripts
+
 - **npm dev**: Iniciar modo de desarrollo
-- **npm start**: Iniciar aplicación
-- **npm build**: Construir aplicación
+- **npm start**: Iniciar aplicación en modo producción
+- **npm build**: Construir aplicación en modo producción
 - **npm test:all**: Ejecutar todas las pruebas en modo desarrollo
 - **npm test:ci**: Ejecutar todas las pruebas en modo CI
 
@@ -157,13 +178,17 @@ El resto de los scripts específicos de cada repositorio y una breve explicació
 
 Con el fin de estandarizar todo el código generado, todos los repositorios deben contar con herramientas de linteo y formateadores de código que homogenicen el código según los estándares definidos a continuación:
 
-Estilo de código: JavaScript Standard Style
-Reglas del Linter:
+- **Estilo de código**: JavaScript Standard Style
+- **Reglas del Linter**:
 
-```json
-{
+  ```json
+  {
     "rules": {
-        "no-console": "warn",
+      "semi": [2, "never"],
+      "no-var": "warn",
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "no-undef": "warn"
     }
-}
-```
+  }
+  ```
