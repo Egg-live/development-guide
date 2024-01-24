@@ -92,3 +92,78 @@ En casos donde la implementación con este Stack no sea posible, los desarrollad
 - Grafana
 - Kubernetes
 - Docker
+
+
+## Repositorios
+
+En esta sección, se establecen las especificaciones y requerimientos que deben cumplir los nuevos repositorios de software.
+
+Para repositorios existentes, se debe estimar el esfuerzo necesario para adaptarlos a estos estándares y programar dichas tareas en caso de ser viable. Cada repositorio tendrá asignado un "owner" que será responsable de garantizar el cumplimiento de los estándares actuales y futuros detallados en esta guía.
+
+### README.md
+
+En esta sección se definen la anatomía básica del archivo README de cada repositorio con el objetivo de facilitar su uso.
+
+Todas las secciones descritas a continuación deben estar presentes en el archivo README.md, salvo que no sea necesario o aplique.
+
+```md
+# Description:
+Breve descripción de la aplicación y su funcionalidad principal.
+
+# Owner
+Nombre de la persona responsable del repositorio y su correo electrónico.
+
+# Development mode:
+Instrucciones para clonar y lanzar el modo desarrollo del repositorio.
+
+# Basic Scripts:
+- **npm dev**: Iniciar modo de desarrollo
+- **npm start**: Iniciar aplicación
+- **npm build**: Construir aplicación
+- **npm test:all**: Ejecutar todas las pruebas en modo desarrollo
+- **npm test:ci**: Ejecutar todas las pruebas en modo CI
+
+# Other Scripts
+Lista y breve descripción de los demás scripts disponibles en el repositorio.
+```
+
+### Modo Desarrollo
+
+Todo repositorio de software debe iniciar en modo desarrollo, con todas las configuraciones apuntando al entorno de desarrollo, utilizando solo los comandos especificados a continuación:
+
+```bash
+git clone [repo]
+cd [repo]
+npm i
+npm dev
+```
+
+### Scripts del Repositorio
+
+Todos los repositorios de software deben contar con los scripts detallados a continuación. Aunque estas funcionalidades no estén disponibles, el script debe enviar un mensaje en consola con la leyenda "No available yet!"
+
+> Esto tiene como objetivo la estandarización y simplificación de los procesos de CI/CD.
+
+El resto de los scripts específicos de cada repositorio y una breve explicación de su funcionalidad deben documentarse en la sección "Other Scripts" del `README.md` del mismo.
+
+#### Basic Scripts
+- **npm dev**: Iniciar modo de desarrollo
+- **npm start**: Iniciar aplicación
+- **npm build**: Construir aplicación
+- **npm test:all**: Ejecutar todas las pruebas en modo desarrollo
+- **npm test:ci**: Ejecutar todas las pruebas en modo CI
+
+### Estilo de Código y Formato
+
+Con el fin de estandarizar todo el código generado, todos los repositorios deben contar con herramientas de linteo y formateadores de código que homogenicen el código según los estándares definidos a continuación:
+
+Estilo de código: JavaScript Standard Style
+Reglas del Linter:
+
+```json
+{
+    "rules": {
+        "no-console": "warn",
+    }
+}
+```
