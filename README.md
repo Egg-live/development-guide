@@ -24,7 +24,7 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
     - [Habilidades Requeridas](#habilidades-requeridas)
       - [Habilidades Mínimas Requeridas](#habilidades-mínimas-requeridas)
   - [El equipo de desarrollo](#el-equipo-de-desarrollo)
-    - [Pair Programming](#pair-programming)
+    - [Sesiones de Pair Programming](#sesiones-de-pair-programming)
       - [Convocatoria a Pair Programming](#convocatoria-a-pair-programming)
       - [Metodología de Trabajo](#metodología-de-trabajo)
       - [Consideraciones Adicionales](#consideraciones-adicionales)
@@ -64,7 +64,7 @@ Estas habilidades son complementarias a los requisitos específicos de cada posi
 
 Esta sección establece los estándares y procesos aplicables a todo el equipo de desarrollo, sirviendo como referencia para resolver dudas y revisar los estándares y herramientas diseñadas para ellos y haciendo foco en la distribución del conocimiento, la optimización del mismo y su capacidad para crecer incorporando nuevos miembros de forma orgánica.
 
-### Pair Programming
+### Sesiones de Pair Programming
 
 El objetivo del Pair Programming (PP) es distribuir el conocimiento entre los desarrolladores y optimizar el tiempo de aprendizaje. Se requiere que cada desarrollador complete al menos 10 horas de PP al mes, con la posibilidad de exceder este mínimo si se considera prudente o necesario.
 
