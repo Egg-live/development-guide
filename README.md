@@ -24,6 +24,9 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
     - [Habilidades Requeridas](#habilidades-requeridas)
       - [Habilidades Mínimas Requeridas](#habilidades-mínimas-requeridas)
   - [El equipo de desarrollo](#el-equipo-de-desarrollo)
+    - [Revisión de Código](#revisión-de-código)
+      - [Obligaciones del Desarrollador](#obligaciones-del-desarrollador)
+      - [Responsabilidades del Revisor](#responsabilidades-del-revisor)
     - [Sesiones de Pair Programming](#sesiones-de-pair-programming)
       - [Convocatoria a Pair Programming](#convocatoria-a-pair-programming)
       - [Metodología de Trabajo](#metodología-de-trabajo)
@@ -63,6 +66,34 @@ Estas habilidades son complementarias a los requisitos específicos de cada posi
 ## El equipo de desarrollo
 
 Esta sección establece los estándares y procesos aplicables a todo el equipo de desarrollo, sirviendo como referencia para resolver dudas y revisar los estándares y herramientas diseñadas para ellos y haciendo foco en la distribución del conocimiento, la optimización del mismo y su capacidad para crecer incorporando nuevos miembros de forma orgánica.
+
+### Revisión de Código
+
+El propósito de las revisiones de código es fomentar la distribución de conocimientos entre los desarrolladores y maximizar la eficiencia del aprendizaje.
+
+Es esencial que todo software desarrollado sea examinado por al menos un integrante del equipo antes de su implementación.
+
+> La asignación del revisor debe ser realizada de manera aleatoria y justa, evitando favoritismos o excepciones.
+
+Para la revisión de código, se deben emplear las herramientas que Github ofrece específicamente para este proceso, facilitando el intercambio de ideas, la resolución de problemas y la implementación de mejoras.
+
+#### Obligaciones del Desarrollador
+
+1. Crear el Pull Request (PR) con el código a ser revisado.
+2. Elegir y asignar un revisor de forma aleatoria.
+3. Incluir en la descripción del PR un vínculo al ticket correspondiente.
+4. Marcar el PR como `Ready for Review` una vez esté preparado para revisión.
+5. Aportar comentarios y sugerencias pertinentes para la evaluación del PR.
+6. Cerrar el PR si los cambios propuestos no son necesarios.
+7. Reabrir el PR si se requieren modificaciones.
+
+#### Responsabilidades del Revisor
+
+1. Asegurar el cumplimiento de los estándares de calidad y la ejecución de tests rutinarios.
+2. Proporcionar comentarios y sugerencias para optimizar el código.
+3. Integrar los cambios en la rama destinada.
+4. Avanzar el ticket a la siguiente fase del flujo de trabajo.
+5. Comunicar cualquier observación relevante a todos los desarrolladores involucrados.
 
 ### Sesiones de Pair Programming
 
