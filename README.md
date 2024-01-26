@@ -23,6 +23,11 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
   - [El desarrollador](#el-desarrollador)
     - [Habilidades Requeridas](#habilidades-requeridas)
       - [Habilidades Mínimas Requeridas](#habilidades-mínimas-requeridas)
+  - [El equipo de desarrollo](#el-equipo-de-desarrollo)
+    - [Pair Programming](#pair-programming)
+      - [Convocatoria a Pair Programming](#convocatoria-a-pair-programming)
+      - [Metodología de Trabajo](#metodología-de-trabajo)
+      - [Consideraciones Adicionales](#consideraciones-adicionales)
   - [Stack Tecnológico](#stack-tecnológico)
     - [Frontend Stack](#frontend-stack)
     - [Backend Stack](#backend-stack)
@@ -54,6 +59,47 @@ Estas habilidades son complementarias a los requisitos específicos de cada posi
 4. **Node, React:** Intermedio
 5. **Bases de Datos:** Intermedio
 6. **Git:** Intermedio
+
+## El equipo de desarrollo
+
+Esta sección establece los estándares y procesos aplicables a todo el equipo de desarrollo, sirviendo como referencia para resolver dudas y revisar los estándares y herramientas diseñadas para ellos y haciendo foco en la distribución del conocimiento, la optimización del mismo y su capacidad para crecer incorporando nuevos miembros de forma orgánica.
+
+### Pair Programming
+
+El objetivo del Pair Programming (PP) es distribuir el conocimiento entre los desarrolladores y optimizar el tiempo de aprendizaje. Se requiere que cada desarrollador complete al menos 10 horas de PP al mes, con la posibilidad de exceder este mínimo si se considera prudente o necesario.
+
+#### Convocatoria a Pair Programming
+
+1. Un desarrollador elige una tarea adecuada para PP de su lista de pendientes.
+2. La tarea se etiqueta como "Pair Programming".
+3. Se anuncia en un grupo con todos los desarrolladores de la organización la disponibilidad de la tarea para PP, indicando la fecha de inicio, el tiempo estimado de desarrollo y el enlace al ticket correspondiente.
+4. Otro desarrollador interesado se apunta para las sesiones de PP.
+5. Ambos desarrolladores coordinan días y horarios para trabajar juntos y programan las reuniones necesarias, bloqueando ambas agendas.
+
+> Nota: Es importante que los desarrolladores colaboren equitativamente con todos los miembros del equipo, independientemente de su experiencia o lenguaje de programación preferido.
+
+#### Metodología de Trabajo
+
+> El `Owner` es el responsable de la tarea y el `Guest` es el desarrollador que se une al PP.
+
+- Antes del inicio, el Guest debe tener el repositorio clonado y el entorno de desarrollo preparado.
+- El Owner presenta el alcance de la tarea, la estrategia general para la solución óptima, las herramientas y tecnologías a usar, y cualquier otra información relevante.
+- El Guest comparte el enlace para la sesión y el Owner se une.
+- El Owner guía al Guest durante el desarrollo, explicando cada decisión y sus fundamentos.
+- El Guest hace preguntas y sugiere alternativas, participando activamente en la toma de decisiones.
+- Las sesiones de PP continúan hasta que la tarea esté lista para avanzar al siguiente estadio de desarrollo.
+- Ambos desarrolladores registran el tiempo empleado en la tarea.
+
+> Objetivo: Que el Guest aprenda y comprenda el proceso de desarrollo de principio a fin para su futura aplicación.
+
+> Se sugiere combinar PP con otras técnicas de desarrollo, como TDD.
+
+#### Consideraciones Adicionales
+
+- El propósito de las sesiones de PP es la distribución del conocimiento, no para resolver problemas urgentes o específicos.
+- Las convocatorias a PP deben anunciarse con antelación para permitir la participación de todos los desarrolladores, especificando si se requieren conocimientos o herramientas particulares.
+- Si un desarrollador no puede asistir a una sesión de PP o necesita terminarla antes, debe informarlo con anticipación y reprogramar la sesión o el tiempo restante. Incumplimientos reiterados deben ser comunicados al líder del equipo.
+- No cumplir con las horas mensuales de PP o las normas establecidas será considerado negativamente en la evaluación de desempeño.
 
 ## Stack Tecnológico
 
