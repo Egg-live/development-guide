@@ -31,6 +31,12 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
       - [Convocatoria a Pair Programming](#convocatoria-a-pair-programming)
       - [Metodología de Trabajo](#metodología-de-trabajo)
       - [Consideraciones Adicionales](#consideraciones-adicionales)
+    - [Sesiones de Conocimiento](#sesiones-de-conocimiento)
+      - [Objetivos](#objetivos)
+      - [Estructura y Formato](#estructura-y-formato)
+      - [Organización y Participación](#organización-y-participación)
+      - [Recursos y Seguimiento](#recursos-y-seguimiento)
+      - [Beneficios Esperados](#beneficios-esperados)
   - [Las ceremonias](#las-ceremonias)
     - [Daily Stand-up](#daily-stand-up)
       - [¿Qué hice ayer?](#qué-hice-ayer)
@@ -45,7 +51,7 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
       - [Duración](#duración)
     - [Retrospectiva](#retrospectiva)
       - [Frecuencia](#frecuencia-1)
-      - [Objetivos](#objetivos)
+      - [Objetivos](#objetivos-1)
       - [Participantes](#participantes)
       - [Estructura de la Reunión](#estructura-de-la-reunión)
       - [Duración](#duración-1)
@@ -157,6 +163,42 @@ El objetivo del Pair Programming (PP) es distribuir el conocimiento entre los de
 - Las convocatorias a PP deben anunciarse con antelación para permitir la participación de todos los desarrolladores, especificando si se requieren conocimientos o herramientas particulares.
 - Si un desarrollador no puede asistir a una sesión de PP o necesita terminarla antes, debe informarlo con anticipación y re programar la sesión o el tiempo restante. Incumplimientos reiterados deben ser comunicados al líder del equipo.
 - No cumplir con las horas mensuales de PP o las normas establecidas será considerado negativamente en la evaluación de desempeño.
+
+### Sesiones de Conocimiento
+
+Las Sesiones de Conocimiento son reuniones diseñadas para fomentar el intercambio de información, habilidades y experiencias dentro del equipo de desarrollo. Su objetivo es crear un espacio de aprendizaje colaborativo donde los miembros del equipo puedan compartir conocimientos, explorar nuevas tecnologías y discutir soluciones a problemas comunes. Estas sesiones no solo promueven el crecimiento profesional individual, sino que también mejoran la cohesión y la sinergia del equipo.
+
+#### Objetivos
+
+1. **Compartir Conocimientos Específicos:** Permitir a los miembros del equipo presentar temas en los que son expertos o han adquirido conocimientos recientes.
+2. **Fomentar la Innovación:** Explorar nuevas tecnologías, metodologías y prácticas que puedan ser beneficiosas para el equipo y la organización.
+3. **Resolver Problemas en Común:** Discutir desafíos técnicos actuales y encontrar soluciones colaborativas.
+
+#### Estructura y Formato
+
+1. **Frecuencia:** La frecuencia dependerá de la disponibilidad y las necesidades del equipo.
+2. **Duración:** Generalmente de 1 a 2 horas, para permitir una discusión detallada sin interrumpir significativamente las actividades regulares del equipo.
+3. **Formato:** Pueden variar entre presentaciones formales, talleres prácticos, sesiones de brainstorming o discusiones abiertas.
+4. **Temas:** Seleccionados por los miembros del equipo, pueden incluir desde actualizaciones tecnológicas hasta lecciones aprendidas en proyectos recientes.
+
+#### Organización y Participación
+
+1. **Calendario de Sesiones:** Se establece una agenda para cada sección con anticipación, permitiendo a los miembros del equipo planificar su participación.
+2. **Rotación de Presentadores:** Todos los miembros del equipo deben tener la oportunidad de presentar, asegurando una diversidad de temas y perspectivas.
+3. **Participación Activa:** Se fomenta la participación activa de todos los asistentes a través de preguntas, comentarios y discusiones.
+
+#### Recursos y Seguimiento
+
+1. **Material de Apoyo:** Los presentadores pueden proporcionar diapositivas, códigos de ejemplo, o recursos adicionales para complementar sus presentaciones.
+2. **Acciones Posteriores:** Identificar acciones o proyectos que surjan como resultado de las discusiones en las sesiones.
+
+#### Beneficios Esperados
+
+- **Mejora Continua:** Actualización constante de habilidades y conocimientos técnicos.
+- **Cohesión del Equipo:** Fortalecimiento de la colaboración y el sentido de comunidad dentro del equipo.
+- **Innovación y Creatividad:** Generación de nuevas ideas y enfoques para los proyectos en curso y futuros.
+
+Incorporando las Sesiones de Conocimiento en la rutina del equipo, se crea un ambiente de aprendizaje continuo y se promueve un espacio donde el compartir y la colaboración son la norma, llevando a un equipo más unido, informado y efectivo.
 
 ## Las ceremonias
 
