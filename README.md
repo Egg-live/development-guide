@@ -15,11 +15,11 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
 
 > Esta guía se encuentra en constante ampliación y evolución. Es responsabilidad de cada miembro del equipo mantenerse informado sobre los cambios y las últimas actualizaciones. Se sugiere suscribirse, leer y colaborar en su mantenimiento y mejora.
 
-## Índice
+## Índice de contenido
 
 - [Development guide](#development-guide)
   - [Acerca de esta guía](#acerca-de-esta-guía)
-  - [Índice](#índice)
+  - [Índice de contenido](#índice-de-contenido)
   - [El desarrollador](#el-desarrollador)
     - [Habilidades Requeridas](#habilidades-requeridas)
       - [Habilidades Mínimas Requeridas](#habilidades-mínimas-requeridas)
@@ -31,6 +31,32 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
       - [Convocatoria a Pair Programming](#convocatoria-a-pair-programming)
       - [Metodología de Trabajo](#metodología-de-trabajo)
       - [Consideraciones Adicionales](#consideraciones-adicionales)
+  - [Las ceremonias](#las-ceremonias)
+    - [Daily Stand-up](#daily-stand-up)
+      - [¿Qué hice ayer?](#qué-hice-ayer)
+      - [¿Qué haré hoy?](#qué-haré-hoy)
+      - [¿Hay algún impedimento que esté obstaculizando mi trabajo?](#hay-algún-impedimento-que-esté-obstaculizando-mi-trabajo)
+    - [Architecture Meeting](#architecture-meeting)
+      - [Frecuencia](#frecuencia)
+      - [Temas](#temas)
+      - [Solicitante](#solicitante)
+      - [Participación](#participación)
+      - [Accionable](#accionable)
+      - [Duración](#duración)
+    - [Retrospectiva](#retrospectiva)
+      - [Frecuencia](#frecuencia-1)
+      - [Objetivos](#objetivos)
+      - [Participantes](#participantes)
+      - [Estructura de la Reunión](#estructura-de-la-reunión)
+      - [Duración](#duración-1)
+      - [Importancia del Ambiente](#importancia-del-ambiente)
+    - [Planificación Ad-hoc](#planificación-ad-hoc)
+      - [Objetivo](#objetivo)
+      - [Frecuencia](#frecuencia-2)
+      - [Participantes](#participantes-1)
+      - [Estructura de la Reunión](#estructura-de-la-reunión-1)
+      - [Duración](#duración-2)
+      - [Importancia](#importancia)
   - [Stack Tecnológico](#stack-tecnológico)
     - [Frontend Stack](#frontend-stack)
     - [Backend Stack](#backend-stack)
@@ -129,8 +155,151 @@ El objetivo del Pair Programming (PP) es distribuir el conocimiento entre los de
 
 - El propósito de las sesiones de PP es la distribución del conocimiento, no para resolver problemas urgentes o específicos.
 - Las convocatorias a PP deben anunciarse con antelación para permitir la participación de todos los desarrolladores, especificando si se requieren conocimientos o herramientas particulares.
-- Si un desarrollador no puede asistir a una sesión de PP o necesita terminarla antes, debe informarlo con anticipación y reprogramar la sesión o el tiempo restante. Incumplimientos reiterados deben ser comunicados al líder del equipo.
+- Si un desarrollador no puede asistir a una sesión de PP o necesita terminarla antes, debe informarlo con anticipación y re programar la sesión o el tiempo restante. Incumplimientos reiterados deben ser comunicados al líder del equipo.
 - No cumplir con las horas mensuales de PP o las normas establecidas será considerado negativamente en la evaluación de desempeño.
+
+## Las ceremonias
+
+En esta sección estipularemos las ceremonias que realizará el equipo de desarrollo y estableceremos las pautas a seguir para lograr el óptimo desarrollo de las mismas.
+
+### Daily Stand-up
+
+En esta ceremonia de frecuencia diaria se espera que cada desarrollador responda tres preguntas claves en un tiempo no mayor a 4 minutos.
+
+Estas preguntas están diseñadas para proporcionar una actualización rápida y eficiente sobre el progreso y los posibles impedimentos en el trabajo del equipo.
+
+Las preguntas son:
+
+#### ¿Qué hice ayer?
+
+Aquí, cada miembro del equipo informa sobre lo que logró el día anterior. Esto ayuda a entender el progreso y fomenta la responsabilidad individual.
+
+#### ¿Qué haré hoy?
+
+En esta parte, cada desarrollador describe las tareas en las que planea trabajar durante el día. Esto sirve para establecer expectativas y ayuda al equipo a estar al tanto de lo que está sucediendo, lo que puede promover la colaboración y la ayuda mutua.
+
+#### ¿Hay algún impedimento que esté obstaculizando mi trabajo?
+
+Finalmente, se discuten los desafíos o bloqueos que el desarrollador está enfrentando. El objetivo es identificar rápidamente cualquier obstáculo que pueda retrasar el trabajo establecido, y buscar soluciones en equipo o apoyo del Scrum Master para resolver estos impedimentos.
+
+Durante la ronda de actualización de estad del equipo, ningún desarrollador deberá ser interrumpido y la ronda de actualización deberá fluir de la manera más ágil posible.
+
+Cualquier necesidad de profundizar sobre algún tema, consulta o tema a tratar deberá realizarse luego de la ronda de actualización, para lo cuál, quien lo requiera deberá solicitar que permanezcan en la reunión aquellos integrantes que considere necesario. O fijar una reunión especial para tratar dicho tema.
+
+### Architecture Meeting
+
+La reunión de Arquitectura es un encuentro focalizado en la mejora y discusión de la arquitectura del sistema o de secciones específicas del mismo. A la vez que es una herramienta muy potente en la distribución del conocimiento y la optimización del tiempo de aprendizaje.
+
+#### Frecuencia
+
+- **Solicitud según necesidad**: Esta reunión debe ser convocada según la necesidad de discutir o mejorar aspectos particulares de la arquitectura del sistema.
+- **Mínimo cada 20 días**: Independientemente de las necesidades específicas, se debe agendar al menos una reunión de este tipo cada 20 días para asegurar un seguimiento y mejora continua de la arquitectura del sistema.
+
+#### Temas
+
+- **Enfoque único**: Cada reunión debe centrarse en un único tema para garantizar una discusión en profundidad y efectiva.
+- **Mejoras y soluciones**: El objetivo principal es debatir soluciones o mejoras en la arquitectura del sistema o de alguna de sus secciones.
+
+#### Solicitante
+
+- **Iniciativa abierta**: Cualquier miembro del equipo de desarrollo puede solicitar una reunión, estableciendo la agenda y los temas a tratar.
+- **Participación opcional pero específica**: La reunión es abierta a todo el equipo pero opcional, con la posibilidad de requerir la asistencia obligatoria de ciertos miembros.
+- **Responsabilidad del solicitante**: Es deber del solicitante especificar claramente el tema y los resultados esperados de la reunión.
+
+#### Participación
+
+- **Aportes de todos los presentes**: Se fomenta la contribución activa de todos los asistentes, ofreciendo soluciones o sugerencias de mejora.
+
+#### Accionable
+
+- **Definición de tareas**: Al concluir la reunión, se debe tener una tarea claramente definida o una descripción de los pasos a seguir para implementar la solución acordada.
+
+#### Duración
+
+- **Estimación del solicitante**: La duración de la reunión será definida por el solicitante, quien debe estimar el tiempo necesario para abordar el tema, discutir soluciones y definir los resultados esperados. En este punto en muy importante que el solicitante acote el alcance del tema a tratar para garantizar el éxito de la reunión.
+
+Esta estructura busca mantener el enfoque y la eficiencia, asegurando que las discusiones sobre la arquitectura del sistema sean productivas y contribuyan al desarrollo continuo y a la mejora del proyecto.
+
+### Retrospectiva
+
+La ceremonia de Retrospectiva es un espacio esencial para la reflexión y mejora continua del equipo de desarrollo. Se enfoca en analizar cómo está funcionando el equipo y los procesos, y en identificar acciones para mejorar en el ciclo de trabajo.
+
+#### Frecuencia
+
+- **Al final de cada sprint**: La Retrospectiva se lleva a cabo regularmente al final de cada sprint, asegurando un análisis oportuno y pertinente de las actividades recientes. En caso de que la metodología de trabajo no sea por sprint, se debe realizar al menos una vez al mes.
+
+#### Objetivos
+
+- **Evaluación del sprint**: Revisar qué tan bien funcionó el sprint o el período comprendido desde la última reunión de **Retrospectiva**, identificando tanto los logros como los desafíos.
+- **Identificar mejoras**: Destacar áreas de mejora y proponer acciones concretas para implementar en los próximos sprints.
+- **Fomentar la comunicación**: Crear un espacio seguro donde todos los miembros del equipo puedan compartir sus opiniones y experiencias de manera abierta y respetuosa.
+
+#### Participantes
+
+- **Todo el equipo involucrado**: Incluye a los miembros del equipo de desarrollo, asegurando una perspectiva integral de todas las partes involucradas.
+
+#### Estructura de la Reunión
+
+1. **Preparación**: El Scrum Master o quien lidere la reunión prepara la reunión, definiendo una estructura clara y asegurando que el ambiente sea propicio para una discusión abierta y honesta.
+
+2. **Revisión del sprint**: Comenzar con una revisión general del sprint o ciclo de trabajo posterior a la reunion anterior, incluyendo logros y desafíos.
+
+3. **Discusión abierta**: Utilizar técnicas como "Lo que fue bien/Lo que se puede mejorar" para guiar la discusión. Se anima a todos a contribuir con sus puntos de vista.
+
+4. **Identificación de Acciones de Mejora**: Con base en la discusión, identificar acciones concretas que el equipo puede implementar para mejorar en el próximo sprint o ciclo de trabajo.
+
+5. **Documentación y Compromiso**: Registrar las acciones de mejora acordadas y asignar responsabilidades para su seguimiento.
+
+6. **Retroalimentación sobre la reunión**: Finalmente, recoger comentarios sobre cómo se desarrolló la retrospectiva misma, para mejorar continuamente esta ceremonia.
+
+#### Duración
+
+- **Tiempo estimado**: La duración recomendada es de una hora.
+
+#### Importancia del Ambiente
+
+- **Confianza y Respeto**: Es fundamental que la Retrospectiva se desarrolle en un ambiente de confianza y respeto, donde todos se sientan cómodos para expresar sus opiniones sin temor a represalias o críticas.
+
+La Retrospectiva es una herramienta clave para el desarrollo ágil, pues permite al equipo reflexionar sobre su manera de trabajar y buscar activamente formas de mejorar. Su éxito depende de la participación honesta y abierta de todos los miembros del equipo y del compromiso conjunto hacia la mejora continua.
+
+### Planificación Ad-hoc
+
+La reunión de Planificación Ad-hoc es una ceremonia clave en el marco de trabajo de Kanban, diseñada para abordar la planificación de trabajos y proyectos específicos que requieren atención y coordinación especial. Esta reunión se convoca según sea necesario, en lugar de seguir un horario regular, y sirve para asegurar que el equipo aborde de manera efectiva los desafíos emergentes o las oportunidades únicas que se presentan.
+
+#### Objetivo
+
+- **Planificación específica**: Centrarse en la planificación y discusión de tareas o proyectos nuevos y significativos que no forman parte del flujo de trabajo diario regular.
+- **Respuesta a cambios o necesidades**: Proporcionar un foro para abordar rápidamente los cambios en las prioridades o para discutir trabajos que requieren una planificación especial.
+
+#### Frecuencia
+
+- **Según sea necesario**: No hay un horario fijo para estas reuniones. Se convocan en respuesta a necesidades específicas del equipo o del proyecto.
+
+#### Participantes
+
+- **Equipo de Desarrollo**: Todos los miembros del equipo de desarrollo relevantes para el trabajo o proyecto en cuestión.
+- **Stakeholders clave**: Incluyendo al Product Owner, y posiblemente a clientes o usuarios finales, dependiendo de la naturaleza del proyecto o tarea.
+- **Facilitador**: Generalmente, el Scrum Master o un líder de equipo que guía la discusión y mantiene el enfoque en los objetivos de la reunión.
+
+#### Estructura de la Reunión
+
+1. **Definición de Objetivos**: Comenzar con una clara definición de los objetivos de la reunión y los resultados esperados.
+2. **Presentación de Proyectos/Tareas**: Introducir y discutir los nuevos ítems de trabajo, proyectos o cambios que requieren planificación.
+3. **Análisis y Discusión**: Evaluar las implicaciones, recursos necesarios, posibles desafíos y estrategias para abordar el trabajo.
+4. **Planificación y Asignación de Tareas**: Desglosar el trabajo en tareas más pequeñas y asignar responsabilidades y plazos.
+5. **Establecimiento de Prioridades**: Priorizar las tareas y determinar cómo se integrarán en el flujo de trabajo actual del tablero Kanban.
+6. **Revisión y Confirmación**: Asegurarse de que todos entiendan y estén de acuerdo con el plan y los próximos pasos.
+
+#### Duración
+
+- **Variable según la complejidad**: La duración dependerá de la complejidad y el alcance del trabajo a planificar. Puede variar desde una breve discusión hasta una sesión de varias horas para proyectos más grandes.
+
+#### Importancia
+
+- **Flexibilidad y Respuesta Rápida**: Esta reunión permite al equipo de Kanban ser ágil y responder rápidamente a las oportunidades o desafíos inesperados.
+- **Enfoque en la Calidad y Eficiencia**: Ayuda a asegurar que el trabajo nuevo o complejo se aborde de manera efectiva, manteniendo la calidad y eficiencia del proceso de desarrollo.
+
+La reunión de Planificación Ad-hoc es crucial para mantener la flexibilidad y adaptabilidad en un entorno de Kanban, permitiendo al equipo responder de manera efectiva a las necesidades cambiantes y a los retos específicos del proyecto.
 
 ## Stack Tecnológico
 
