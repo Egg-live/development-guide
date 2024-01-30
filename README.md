@@ -37,6 +37,7 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
       - [Organización y Participación](#organización-y-participación)
       - [Recursos y Seguimiento](#recursos-y-seguimiento)
       - [Beneficios Esperados](#beneficios-esperados)
+  - [Work flow](#work-flow)
   - [Las ceremonias](#las-ceremonias)
     - [Daily Stand-up](#daily-stand-up)
       - [¿Qué hice ayer?](#qué-hice-ayer)
@@ -199,6 +200,64 @@ Las Sesiones de Conocimiento son reuniones diseñadas para fomentar el intercamb
 - **Innovación y Creatividad:** Generación de nuevas ideas y enfoques para los proyectos en curso y futuros.
 
 Incorporando las Sesiones de Conocimiento en la rutina del equipo, se crea un ambiente de aprendizaje continuo y se promueve un espacio donde el compartir y la colaboración son la norma, llevando a un equipo más unido, informado y efectivo.
+
+## Work flow
+
+Este documento detalla el proceso de trabajo desde la asignación de una tarea al desarrollador hasta su implementación en producción.
+
+1. **Start**:
+
+   - **Selección**: El desarrollador elige la tarea de mayor prioridad de su lista asignada o la primera en su tablero Kanban.
+   - **Alternativas**: Si la tarea seleccionada no puede ser realizada, se debe consensuar con el equipo de producto o el líder directo para elegir una alternativa.
+
+2. **Development**:
+
+   1. Mover la tarea al estado `In progress`.
+   2. Crear una rama de características (`feature branch`) con el formato `[ticket-id]/[task-type]/title` partiendo desde `develop`.
+   3. Registrar la tarea en el archivo `CHANGELOG.md`, vinculándola con el ticket correspondiente.
+   4. Crear subtareas para cualquier configuración extra o variables de entorno necesarias, especificando detalles y responsables. Las variables de entorno necesarias deberán ser establecidas para todos los ambientes necesarios a la vez.
+   5. En caso de necesitar ayuda de otro desarrollador, crear una subtarea detallando la necesidad y los criterios de aceptación.
+   6. Implementar la funcionalidad.
+   7. Realizar commits regulares y atómicos, y subir los cambios a la rama remota asegurándose que se ejecuten correctamente.
+   8. Registrar el tiempo empleado regularmente.
+   9. Informar en la reunión diaria o al líder si el plazo de entrega está en riesgo, y preparar un plan de acción.
+   10. Verificar que se cumplan adecuadamente.
+   11. Marcar el PR (Pull Request) para revisión y asignar al menos un revisor.
+
+3. **Review**:
+
+   - Los desarrolladores asignados revisan, comentan y sugieren mejoras para asegurar la calidad del código.
+
+4. **Merge**:
+
+   - El revisor principal verifica los tests, aprueba el PR, realiza el merge a `develop` y `staging`, y actualiza el estado de la tarea en Jira para el proceso de QA (Quality Assurance).
+
+5. **QA**:
+
+   - **Validación**: El equipo de QA realiza pruebas para asegurar el cumplimiento de los criterios de aceptación.
+   - **Gestión de Errores**: En caso de encontrar errores, reportarlo en Jira mediante un comentario en la tarea especifica, incluyendo los pasos y credenciales necesarias para su reproducción, mover la tarea nuevamente a `In progress` e informar al desarrollador para que elimine el código defectuoso de la rama `staging` y resuelva el problema.
+   - **Registro de tiempo empleado**: En ambos casos, las horas empleadas deben ser registradas en la tarea.
+
+6. **Pre-Production**:
+
+   - Integrar semanalmente todas las tareas con estado `QA passed` a la rama `demo` para su última revisión y aprobación por el departamento de Producto y mover dichas tareas al estado `Demo`.
+
+7. **Production-Ready**:
+
+   - El departamento de producto actualiza manuales, genera la comunicación y actualiza la documentación necesaria, revisa las características a desplegar y marca el lanzamiento como `Production Ready`.
+
+8. **Deploy**:
+
+   - Seguir el cronograma establecido por el roadmap del producto para el despliegue, informando a todos los stakeholders durante una ceremonia especial de lanzamiento.
+
+9. **Product update**:
+
+   - Informar a los stakeholders sobre la actualización del producto, proporcionando enlaces a la documentación actualizada.
+
+10. **Monitoring**:
+    - Supervisar el comportamiento del sistema y asegurar su correcto funcionamiento.
+    - En caso de errores, implementar un plan de contingencia que puede incluir un hotfix o la reversión del release desplegado.
+    - Programar guardias para monitorear el sistema en momentos de alta demanda de ser necesario.
 
 ## Las ceremonias
 
@@ -464,7 +523,7 @@ El resto de los scripts específicos de cada repositorio y una breve explicació
 
 ### Estilo de Código y Formato
 
-Con el fin de estandarizar todo el código generado, todos los repositorios deben contar con herramientas de linteo y formateadores de código que homogenicen el código según los estándares definidos a continuación:
+Con el fin de estandarizar todo el código generado, todos los repositorios deben contar con herramientas de linteo y formato de código que homogenicen el código según los estándares definidos a continuación:
 
 - **Estilo de código**: JavaScript Standard Style
 - **Reglas del Linter**:
