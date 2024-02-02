@@ -464,14 +464,14 @@ Breve descripción de la aplicación, su funcionalidad principal y a quien va di
 
 # Owner
 
-Nombre de la persona responsable del repositorio y enlace a su correo electrónico.
+Nombre de la persona responsable del repositorio y enlace a su correo electrónico. Ej: [Nombre](maitlto:user@mail.com)
 
 # Main Branches
 
-- **development**: A development branch
-- **staging**: A quality assurance test branch
-- **demo**: A pre production branch
 - **main**: A production released branch
+- **demo**: A pre production branch
+- **staging**: A quality assurance test branch
+- **development**: A development branch
 
 # Development mode:
 
