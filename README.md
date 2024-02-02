@@ -476,8 +476,8 @@ Nombre de la persona responsable del repositorio y enlace a su correo electróni
 # Development mode:
 
 ```bash
-git clone https://github.com/your-username/egg-adm.git
-cd egg-adm
+git clone https://github.com/your-username/repo-name.git
+cd repo-name
 npm i
 npm run dev
 ```
