@@ -457,7 +457,7 @@ Para repositorios existentes, se debe estimar el esfuerzo necesario para adaptar
 
 Todas las secciones descritas a continuación deben estar presentes en el archivo README.md, salvo que **no** sea necesario o **no** aplique.
 
-```md
+````md
 # Description:
 
 Breve descripción de la aplicación, su funcionalidad principal y a quien va dirigida.
@@ -475,15 +475,20 @@ Nombre de la persona responsable del repositorio y enlace a su correo electróni
 
 # Development mode:
 
-Instrucciones para clonar y lanzar el modo desarrollo del repositorio.
+```bash
+git clone https://github.com/your-username/egg-adm.git
+cd egg-adm
+npm i
+npm run dev
+```
 
 # Basic Scripts:
 
-- **npm dev**: Iniciar modo de desarrollo
-- **npm start**: Iniciar aplicación
-- **npm build**: Construir aplicación
-- **npm test:all**: Ejecutar todas las pruebas en modo desarrollo
-- **npm test:ci**: Ejecutar todas las pruebas en modo CI
+- **npm run dev**: Iniciar modo de desarrollo
+- **npm run start**: Iniciar aplicación
+- **npm run build**: Construir aplicación
+- **npm run test:all**: Ejecutar todas las pruebas en modo desarrollo
+- **npm run test:ci**: Ejecutar todas las pruebas en modo CI
 
 # Other Scripts
 
@@ -492,7 +497,7 @@ Lista y breve descripción de los demás scripts disponibles en el repositorio.
 # Adicional Information
 
 Información adicional que no aplique en las secciones anteriores.
-```
+````
 
 ### Modo Desarrollo
 
