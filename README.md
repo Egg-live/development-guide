@@ -541,7 +541,7 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
       "no-unused-vars": "warn",
       "no-var": "error",
       "prefer-const": "error",
-      "semi": ["error"]
+      "semi": ["error", "never"]
     }
   }
   ```
