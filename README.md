@@ -536,11 +536,12 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
   ```json
   {
     "rules": {
-      "semi": [2, "never"],
-      "no-var": "warn",
       "no-console": "warn",
+      "no-undef": "warn",
       "no-unused-vars": "warn",
-      "no-undef": "warn"
+      "no-var": "error",
+      "prefer-const": "error",
+      "semi": ["error"]
     }
   }
   ```
