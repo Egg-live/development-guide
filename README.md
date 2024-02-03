@@ -531,6 +531,13 @@ El resto de los scripts específicos de cada repositorio y una breve explicació
 Con el fin de estandarizar todo el código generado, todos los repositorios deben contar con herramientas de linteo y formato de código que homogenicen el código según los estándares definidos a continuación:
 
 - **Estilo de código**: JavaScript Standard Style
+
+  ```json
+  {
+    "semi": false
+  }
+  ```
+
 - **Reglas del Linter**:
 
   ```json
