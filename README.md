@@ -534,7 +534,12 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
 
   ```json
   {
-    "semi": false
+      "printWidth": 100,
+      "tabWidth": 4,
+      "singleQuote": true,
+      "semi": false,
+      "trailingComma": "all",
+      "arrowParens": "always"
   }
   ```
 
