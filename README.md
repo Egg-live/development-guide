@@ -65,6 +65,7 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
       - [Duración](#duración-2)
       - [Importancia](#importancia)
   - [Stack Tecnológico](#stack-tecnológico)
+    - [Asignación de puertos y servicios](#asignación-de-puertos-y-servicios)
     - [Frontend Stack](#frontend-stack)
     - [Backend Stack](#backend-stack)
     - [Database Stack](#database-stack)
@@ -411,6 +412,21 @@ Cada nuevo proyecto diseñado o desarrollado debe adaptarse y utilizar el Stack 
 En casos donde la implementación con este Stack no sea posible, los desarrolladores a cargo del proyecto deben solicitar una reunión de arquitectura ("Architecture Meet"). Durante esta reunión, expondrán los impedimentos para utilizar uno de los Stacks definidos y justificarán las herramientas y tecnologías sugeridas. Solo si la reunión de arquitectura concluye que es necesario incumplir los estándares especificados, se permitirá iniciar el desarrollo o la implementación.
 
 > La convocatoria a la "Architecture Meet" debe cumplir con las pautas establecidas en este documento.
+
+### Asignación de puertos y servicios
+
+A continuación se detallarán en una tabla, las aplicaciones y servios y los puertos asignados para su ejecución.
+
+| Aplicación/Servicio | Puerto |
+| ------------------- | ------ |
+| App                 | 8000   |
+| SDK                 | 8001   |
+| WIDGET              | 8002   |
+| ADM                 | 8083   |
+| BO                  | 8084   |
+| ADMIN               | 8085   |
+| BACKOFFICE          | 8086   |
+| API-SIGNUP          | 3000   |
 
 ### Frontend Stack
 
