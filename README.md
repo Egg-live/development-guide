@@ -426,6 +426,7 @@ A continuación se detallarán en una tabla, las aplicaciones y servios y los pu
 | BO                  | 8084   |
 | ADMIN               | 8085   |
 | BACKOFFICE          | 8086   |
+| MEET                | 8087   |
 | API-SIGNUP          | 3000   |
 
 ### Frontend Stack
