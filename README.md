@@ -76,6 +76,11 @@ Cada punto detallado en esta guía tiene el objetivo de asegurar y garantizar lo
     - [Scripts del Repositorio](#scripts-del-repositorio)
       - [Basic Scripts](#basic-scripts)
     - [Estilo de Código y Formato](#estilo-de-código-y-formato)
+    - [Pipeline CI/CD](#pipeline-cicd)
+  - [Workflows](#workflows)
+  - [Qualityflows](#qualityflows)
+  - [Dockerfile](#dockerfile)
+  - [Manifiesto Kubernetes](#manifiesto-kubernetes)
 
 ## El desarrollador
 
@@ -446,6 +451,7 @@ En casos donde la implementación con este Stack no sea posible, los desarrollad
 - Grafana
 - Kubernetes
 - Docker
+- Terraform
 
 ## Repositorios
 
@@ -557,3 +563,85 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
     }
   }
   ```
+
+### Pipeline CI/CD
+
+## Workflows
+
+Este archivo egg-api-nombre.yml es un archivo de flujo de trabajo de GitHub Actions. Define un pipeline de integración continua (CI) para un proyecto. Aquí tienes un desglose de su estructura:
+
+Nombre del flujo de trabajo: El nombre del flujo de trabajo es egg-api-nombre.
+
+Variables de entorno: Se definen varias variables de entorno a nivel de flujo de trabajo. Estas se utilizan a lo largo de los trabajos en el flujo de trabajo.
+
+Trabajos: El flujo de trabajo define un trabajo llamado build_dev. Este trabajo:
+
+Se ejecuta en la última versión de Ubuntu.
+
+Se ejecuta si las rama feat/ci, develop, staging, demo y production.
+
+Define una variable de entorno IMAGE_TAG con el valor del SHA del commit actual.
+
+Consiste en varios pasos, incluyendo obtener una versión corta del SHA del commit, comprobar el código, y presumiblemente más pasos que no se muestran en el extracto.
+
+## Qualityflows
+
+El archivo egg-quality.yml es un archivo de flujo de trabajo de GitHub Actions que define dos trabajos: sonar_dev y coverage. Aquí tienes un desglose de su estructura:
+
+Nombre del flujo de trabajo: El nombre del flujo de trabajo es Check quality gate result on pull request.
+
+Eventos de disparo: El flujo de trabajo se dispara en eventos de pull_request.
+
+Trabajo sonar_dev:
+
+runs-on: ubuntu-latest: Este trabajo se ejecuta en la última versión de Ubuntu.
+
+steps: Este trabajo consta de varios pasos, incluyendo la comprobación del código con SonarQube y la impresión de los resultados.
+
+Trabajo coverage:
+
+permissions: Este trabajo tiene permisos de escritura para checks, pull-requests y contents.
+
+runs-on: ubuntu-latest: Este trabajo se ejecuta en la última versión de Ubuntu.
+steps: Este trabajo consta de varios pasos, incluyendo la comprobación del código y la ejecución de pruebas con cobertura utilizando Jest.
+
+## Dockerfile
+
+Este Dockerfile está estructurado en dos etapas: la etapa de construcción y la etapa de lanzamiento.
+
+1. **Etapa de construcción**:
+
+   - `FROM node:16.13.1-alpine AS build`: Esta línea establece la imagen base para la etapa de construcción como `node:16.13.1-alpine`.
+   - `WORKDIR /usr/src/app`: Establece el directorio de trabajo en el contenedor a `/usr/src/app`.
+   - `COPY . .`: Copia todos los archivos del directorio actual en el host al directorio de trabajo en el contenedor.
+   - `RUN npm install`: Ejecuta `npm install` para instalar todas las dependencias del proyecto.
+   - `RUN npm run generate:ecosystem`: Ejecuta el script `generate:ecosystem` definido en el `package.json`.
+   - `RUN npm run generate:users`: Ejecuta el script `generate:users` definido en el `package.json`.
+   - `RUN npm run build`: Ejecuta el script `build` definido en el `package.json` para construir la aplicación.
+
+2. **Etapa de lanzamiento**:
+
+   - `FROM node:16.13.1-alpine`: Esta línea establece la imagen base para la etapa de lanzamiento como `node:16.13.1-alpine`.
+   - `ENV NODE_ENV=develop`: Establece la variable de entorno `NODE_ENV` a `develop`.
+   - `WORKDIR /usr/src/app`: Establece el directorio de trabajo en el contenedor a `/usr/src/app`.
+   - `RUN mkdir node_modules`: Crea un directorio `node_modules` en el contenedor.
+   - `COPY --from=build /usr/src/app/.env .`: Copia el archivo `.env` desde la etapa de construcción al directorio de trabajo en el contenedor.
+   - `COPY --from=build /usr/src/app/dist/ dist/`: Copia el directorio `dist/` desde la etapa de construcción al directorio de trabajo en el contenedor.
+   - `COPY --from=build /usr/src/app/node_modules/ node_modules/`: Copia el directorio `node_modules/` desde la etapa de construcción al directorio de trabajo en el contenedor.
+   - `COPY --from=build /usr/src/app/prisma prisma/`: Copia el directorio `prisma/` desde la etapa de construcción al directorio de trabajo en el contenedor.
+   - `EXPOSE 3000`: Informa a Docker que el contenedor escucha en el puerto 3000.
+   - `CMD ["node", "dist/main"]`: Establece el comando por defecto que se ejecutará cuando se inicie el contenedor. En este caso, se ejecutará `node dist/main` para iniciar la aplicación.
+
+## Manifiesto Kubernetes
+
+00-namespace.yaml: Este archivo probablemente define un Namespace en Kubernetes. Los Namespaces son una forma de dividir los recursos del clúster entre varios usuarios o equipos.
+
+01-deployment.yaml: Este archivo probablemente define un Deployment en Kubernetes. Los Deployments son una forma de declarar el estado deseado para tus aplicaciones y permitir que Kubernetes lo gestione.
+
+02-service.yaml: Este archivo probablemente define un Service en Kubernetes. Los Services permiten la comunicación entre diferentes partes de tu aplicación dentro del clúster, y también pueden exponer tu aplicación al tráfico de Internet.
+
+03-ingress.yaml: Este archivo probablemente define un Ingress en Kubernetes. Los Ingresses permiten el acceso al tráfico HTTP y HTTPS desde fuera del clúster a los servicios dentro del clúster.
+
+04-certificate.yaml: Este archivo probablemente define un Certificate. Esto podría ser parte de cert-manager o similar, y se utilizaría para manejar los certificados TLS para tu Ingress.
+
+05-autoscaler.yaml: Este archivo probablemente define un Horizontal Pod Autoscaler. Los Horizontal Pod Autoscalers ajustan automáticamente el número de pods en un deployment, replicaset, statefulset, o replicación basado en el uso de recursos observado.
