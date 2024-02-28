@@ -483,12 +483,14 @@ Breve descripción de la aplicación, su funcionalidad principal y a quien va di
 
 Nombre de la persona responsable del repositorio y enlace a su correo electrónico. Ej: [Nombre](maitlto:user@mail.com)
 
-# Main Branches
+# Branches
 
-- **main**: A production released branch
-- **demo**: A pre production branch
-- **staging**: A quality assurance test branch
-- **development**: A development branch
+| branch      | description                     | url                                        |
+| ----------- | ------------------------------- | ------------------------------------------ |
+| main        | A production released branch    | [visit](https://repo-name.egg.live)             |
+| demo        | A pre production branch         | [visit](https://demo.repo-name.egg.live)        |
+| staging     | A quality assurance test branch | [visit](https://staging.repo-name.egg.live)     |
+| development | A development branch            | [visit](https://development.repo-name.egg.live) |
 
 # Development mode:
 
