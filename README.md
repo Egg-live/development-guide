@@ -567,7 +567,8 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
   ```json
   {
     "rules": {
-      "indent": ['error', '4'],
+      indent: ['error', 4],
+      'comma-dangle': 'off',
       "no-console": "warn",
       "no-undef": "warn",
       "no-unused-vars": "warn",
