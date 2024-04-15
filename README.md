@@ -430,6 +430,7 @@ A continuación se detallarán en una tabla, las aplicaciones y servios y los pu
 | API-SIGNUP          | 3000   |
 | API-EGG             | 3001   |
 | API-WEBSOCKET       | 3002   |
+| API-AUTH            | 3003   |
 
 ### Frontend Stack
 
