@@ -431,6 +431,7 @@ A continuación se detallarán en una tabla, las aplicaciones y servios y los pu
 | API-EGG             | 3001   |
 | API-WEBSOCKET       | 3002   |
 | API-AUTH            | 3003   |
+| API-USER            | 3004   |
 
 ### Frontend Stack
 
