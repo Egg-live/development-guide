@@ -432,6 +432,7 @@ A continuación se detallarán en una tabla, las aplicaciones y servios y los pu
 | API-WEBSOCKET       | 3002   |
 | API-AUTH            | 3003   |
 | API-USER            | 3004   |
+| API-ECOSISTEM       | 3005   |
 
 ### Frontend Stack
 
