@@ -556,6 +556,8 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
 
 - **Estilo de código**: JavaScript Standard Style
 
+`.prettierrc.json`
+
   ```json
   {
       "printWidth": 100,
@@ -568,6 +570,8 @@ Con el fin de estandarizar todo el código generado, todos los repositorios debe
   ```
 
 - **Reglas del Linter**:
+
+`eslint.config.js`
 
   ```json
   {
