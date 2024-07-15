@@ -434,6 +434,8 @@ A continuación se detallarán en una tabla, las aplicaciones y servios y los pu
 | API-AUTH            | 3003   |
 | API-USER            | 3004   |
 | API-ECOSISTEM       | 3005   |
+| API-PULSES          | 3006   |
+
 
 ### Frontend Stack
 
