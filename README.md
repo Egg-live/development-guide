@@ -428,6 +428,7 @@ A continuación se detallarán en una tabla, las aplicaciones y servios y los pu
 | BACKOFFICE          | 8086   |
 | MEET                | 8087   |
 | AUTH                | 8088   |
+| Egg-live            | 9000   |
 | API-SIGNUP          | 3000   |
 | API-EGG             | 3001   |
 | API-WEBSOCKET       | 3002   |
